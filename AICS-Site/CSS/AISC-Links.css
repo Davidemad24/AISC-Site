@@ -1,0 +1,203 @@
+.navbar{
+    background-color: rgb(15, 15, 93);
+}
+.navbar{
+    border-bottom: 4px solid rgb(48, 102, 238);
+}
+/* -------------------------------------------------------------------- nav -------------------------------------------------------- */ 
+#container{
+    height: fit-content;
+    background-color: rgb(14, 14, 69);
+    padding: 80px 0;
+}
+#container .links{
+    width: 95%;
+    margin-bottom: 50px;
+    row-gap: 100px;
+    margin: 0 5%;
+}
+#container .link > div{
+    width: 80%;
+    height: 300px;
+    box-shadow: 0 10px 5px 0 rgb(48, 102, 238);
+    background-size: 100% 100%;
+}
+#container a{
+    text-decoration: none;
+}
+#container .link .title{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 130px 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes titleShowing {
+    0%{background-color: rgba(0,0,0,0.6);}
+    25%{background-color: rgba(0,0,0,0.56);}
+    50%{background-color: rgba(0,0,0,0.52);}
+    75%{background-color: rgba(0,0,0,0.48);}
+    100%{background-color: rgba(0,0,0,0.44);}
+}
+#container .btns{
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+}
+#container .btns div{
+    width: 20%;
+    margin: 30px 10px 0 10px;
+} 
+
+.dialog{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+    display: none;
+}
+.myAlert,.alert-Remove{
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 10;
+}
+.alert-Remove form{
+    width: 100%;
+    height: 50vh;
+    overflow: scroll;
+}
+.myAlert form, .alert-Remove form{
+    margin-bottom: 20px;
+}
+.alert-Remove form div{
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+.myAlert h3,#container .alert-Remove h3{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.myAlert form div{
+    width: 410px;
+}
+.myAlert .model-footer,.alert-Remove .model-footer{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding-right: 10px;
+}
+/* -------------------------------------------------------------------- Container -------------------------------------------------- */ 
+footer{
+    background-color: rgb(48, 102, 238);
+    height: 50px;
+    padding: 10px;
+}
+footer p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+@media (min-width: 1200px){
+    .navbar{
+        height: 60px;
+    }
+    .navbar-brand{
+        width: 15%;
+    }
+    .navbar-brand img{
+        margin: 7px;
+    }
+    .navbar-brand span{
+        font-size: 30px;
+        position: relative;
+        top: 5px;
+    }
+    .navbar-nav{
+        width: 70%;
+        padding-left: 30%;
+    }
+    .navbar-nav a{
+        font-size: 18px;
+    } 
+    form{
+        width: 30%;
+    }
+    form input{
+        margin-right: 5px;
+    }
+}
+@media (min-width: 400px) and (max-width: 800px){
+    .navbar-nav li{
+        text-align: center;
+        font-size: 24px;
+    }
+    #container .links{
+        gap: 100px;
+        margin-bottom: 50;
+    }
+    #container .link > div{
+        width: 80%;
+        height: 400px;
+        margin: 0 10%;
+        background-size: 100% 100%;
+    }
+    #container .btns div{
+        width: 30%;
+    } 
+    .myAlert,.alert-Remove{
+        width: 52%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .myAlert form input{
+        width: 85%;
+    }
+}
+@media (min-width: 360px) and (max-width: 400px){
+    .navbar-nav li{
+        text-align: center;
+        font-size: 20px;
+    }
+    #container .links{
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+    #container .link > div{
+        width: 280px;
+        height: 300px;
+        margin: 0 8%;
+    }
+    #container .btns{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #container .btns div{
+        width: 80%;
+        margin: 0 11%;
+    }
+    .myAlert,.alert-Remove{
+        width: 89%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        border: black solid 2px;
+        z-index: 10;
+    }
+    .myAlert form input{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+}

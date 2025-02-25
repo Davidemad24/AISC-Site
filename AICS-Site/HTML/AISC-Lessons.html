@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap-files/css/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/AISC-Lessons.css">
+    <title>Lessons</title>
+    <link rel="icon" type="image/jpg" href="../Pictures/AISC-logo.jpg">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../AISC-Links.html">
+                <img src="../Pictures/AISC-logo.jpg" width="40" height="40" alt="">
+                <span>AISC</span>
+            </a>
+            <a href="#pages" class="navbar-toggler" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+            <div id="pages" class="collapse navbar-collapse">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../AISC-Links.html">Links</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/AISC-Time_Table.html">Schudle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/AISC-Degree.html">Degree</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/AISC-Missions.html">Missions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="dialog add-alert">
+        <div>
+            <h3 class="text-primary">Add Lesson</h3>
+            <form>
+                <div class="week">
+                    <label for="week">Select Week: </label>
+                    <select class="form-control" name="week" id="week">
+                        <option value="null" selected hidden>Week Number...</option>
+                        <option value="1">Week1</option>
+                        <option value="2">Week2</option>
+                        <option value="3">Week3</option>
+                        <option value="4">Week4</option>
+                        <option value="5">Week5</option>
+                        <option value="6">Week6</option>
+                        <option value="7">Week7</option>
+                        <option value="8">Week8</option>
+                        <option value="9">Week9</option>
+                        <option value="10">Week10</option>
+                        <option value="11">Week11</option>
+                        <option value="12">Week12</option>
+                    </select>
+                    <p></p>
+                </div>
+                <div class="course">
+                    <label for="course">Select Course: </label>
+                    <select class="form-control" name="course" id="course">
+                        <option value="null" selected hidden>Course Name...</option>
+                    </select>
+                    <p></p>
+                </div>
+                <div class="lesson">
+                    <label for="lesson">Enter Lesson name: </label>
+                    <input class="form-control" type="text" placeholder="Ex: Ch1 || Stack">
+                    <p></p>
+                </div>
+            </form>
+            <p></p>
+            <div class="model-footer" style="margin-top: 10px;">
+                <div class="btn btn-danger close-model">Close</div>
+                <div class="btn btn-success save">Save</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dialog remove-alert">
+        <div>
+            <h3 class="text-danger">Remove Lesson</h3>
+            <form>
+                <div class="week">
+                    <label for="week">Select Week: </label>
+                    <select class="form-control" name="week" id="week">
+                        <option value="null" selected hidden>Week Number...</option>
+                        <option value="1">Week1</option>
+                        <option value="2">Week2</option>
+                        <option value="3">Week3</option>
+                        <option value="4">Week4</option>
+                        <option value="5">Week5</option>
+                        <option value="6">Week6</option>
+                        <option value="7">Week7</option>
+                        <option value="8">Week8</option>
+                        <option value="9">Week9</option>
+                        <option value="10">Week10</option>
+                        <option value="11">Week11</option>
+                        <option value="12">Week12</option>
+                    </select>
+                    <p></p>
+                </div>
+                <div class="course">
+                    <label for="course">Select Course: </label>
+                    <select class="form-control" name="course" id="course">
+                        <option value="null" selected hidden>Course Name...</option>
+                    </select>
+                    <p></p>
+                </div>
+            </form>
+            <p></p>
+            <div class="model-footer" style="margin-top: 10px;">
+                <div class="btn btn-danger close-model">Close</div>
+                <div class="btn btn-danger save">Remove</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dialog mark-alert">
+        <div>
+            <h3 class="text-danger">Mark Lesson</h3>
+            <form>
+                <div class="week">
+                    <label for="week">Select Week: </label>
+                    <select class="form-control" name="week" id="week">
+                        <option value="null" selected hidden>Week Number...</option>
+                        <option value="1">Week1</option>
+                        <option value="2">Week2</option>
+                        <option value="3">Week3</option>
+                        <option value="4">Week4</option>
+                        <option value="5">Week5</option>
+                        <option value="6">Week6</option>
+                        <option value="7">Week7</option>
+                        <option value="8">Week8</option>
+                        <option value="9">Week9</option>
+                        <option value="10">Week10</option>
+                        <option value="11">Week11</option>
+                        <option value="12">Week12</option>
+                    </select>
+                    <p></p>
+                </div>
+                <div class="course">
+                    <label for="course">Select Course: </label>
+                    <select class="form-control" name="course" id="course">
+                        <option value="null" selected hidden>Course Name...</option>
+                    </select>
+                    <p></p>
+                </div>
+            </form>
+            <p></p>
+            <div class="model-footer" style="margin-top: 10px;">
+                <div class="btn btn-danger close-model">Close</div>
+                <div class="btn btn-success save">Mark</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="container">
+        <div id="table">
+            <table class="table">
+                <thead>
+                    <th>Course</th>
+                    <th>Week1</th>
+                    <th>Week2</th>
+                    <th>Week3</th>
+                    <th>Week4</th>
+                    <th>Week5</th>
+                    <th>Week6</th>
+                    <th>Week7</th>
+                    <th>Week8</th>
+                    <th>Week9</th>
+                    <th>Week10</th>
+                    <th>Week11</th>
+                    <th>Week12</th>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="btns">
+            <div class="btn btn-primary add">Add Lesson</div>
+            <div class="btn btn-danger remove">Remove Lesson</div>
+            <div class="btn btn-success mark">Mark Lesson</div>
+        </div>
+        <p align="center"></p>
+    </div>
+
+
+    <footer>
+        <p><span style="font-size: 20px;margin-top: 10px;">&copy;</span> <span style="color: white;">CopyRight is preserved by</span> AISC</p>
+    </footer>
+
+
+    <script src="../Bootstrap-files/js/jquery-3.7.1.js"></script>
+    <script src="../Bootstrap-files/js/popper.min.js"></script>
+    <script src="../Bootstrap-files/js/bootstrap.js"></script>
+    <script src="../JS/AISC-Lessons.js"></script>
+</body>
+</html>

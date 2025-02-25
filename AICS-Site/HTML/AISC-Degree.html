@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap-files/css/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/AISC-Degree.css">
+    <title>Degree</title>
+    <link rel="icon" type="image/jpg" href="../Pictures/AISC-logo.jpg">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../AISC-Links.html">
+                <img src="../Pictures/AISC-logo.jpg" width="40" height="40" alt="">
+                <span>AISC</span>
+            </a>
+            <a href="#pages" class="navbar-toggler" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+            <div id="pages" class="collapse navbar-collapse">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../AISC-Links.html">Links</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/AISC-Time_Table.html">Schudle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/AISC-Lessons.html">Lessons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/AISC-Missions.html">Missions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="dialog add-C-alert">
+        <div>
+            <h3>Add column</h3>
+            <form>
+                <div class="name">
+                    <label for="name">Column Name: </label>
+                    <input class="form-control" type="text" name="name" id="name" placeholder="Enter col name...">
+                    <p></p>
+                </div>
+            </form>
+            <div class="model-footer">
+                <div class="btn btn-danger close-model">Close</div>
+                <div class="btn btn-primary save">Save Change</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dialog rem-C-alert">
+        <div>
+            <h3 class="text-danger">Remove Column</h3>
+            <form>
+                <div>
+                    <h5>Select Column: </h5>
+                    <div class="form-control" style="background-color: rgba(0, 0, 0, 0.04);border: 2px solid silver;">
+
+                    </div>
+                    <p></p>
+                </div>
+            </form>
+            <div class="model-footer">
+                <div class="btn btn-danger close-model">Close</div>
+                <div class="btn btn-primary save">Save Change</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dialog add-co-alert">
+        <div>
+            <h3>Add Course</h3>
+            <form>
+                <div class="name">
+                    <label for="name">Course Name: </label>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Enter course name...">
+                    <p></p>
+                </div>
+            </form>
+            <div class="model-footer">
+                <div class="btn btn-danger close-model">Close</div>
+                <div class="btn btn-primary save">Save Change</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dialog rem-co-alert">
+        <div>
+            <h3 class="text-danger">Remove Course</h3>
+            <form>
+                <div>
+                    <h5>Select Courses: </h5>
+                    <div class="form-control" style="background-color: rgba(0, 0, 0, 0.04);border: 2px solid silver;">
+                        
+                    </div>
+                    <p></p>
+                </div>
+            </form>
+            <div class="model-footer">
+                <div class="btn btn-danger close-model">Close</div>
+                <div class="btn btn-primary save">Save Change</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dialog add-d-alert">
+        <div>
+            <h3>Add Degree</h3>
+            <form>
+                <div class="s-mark">
+                    <label for="s-mark">Your Mark: </label>
+                    <input class="form-control" type="number" name="s-mark" id="s-mark" placeholder="Enter Your Mark..">
+                    <p></p>
+                </div>
+                <div class="t-mark">
+                    <label for="t-mark">Total Mark: </label>
+                    <input class="form-control" type="number" name="t-mark" id="t-mark" placeholder="Enter Course mark..">
+                    <p></p>
+                </div>
+                <div class="c-name">
+                    <label for="c-name">Select Course Name: </label>
+                    <select class="form-control" name="courseName" id="c-name">
+                        <option value="null" hidden>Course Name</option>
+                    </select>
+                    <p></p>
+                </div>
+                <div class="d-type">
+                    <label for="d-type">Select Degree Column: </label>
+                    <select class="form-control" name="degreeType" id="d-type">
+                        <option value="null" hidden>Degree Column</option>
+                    </select>
+                    <p></p>
+                </div>
+            </form>
+            <p></p>
+            <div class="model-footer">
+                <div class="btn btn-danger close-model">Close</div>
+                <div class="btn btn-primary save">Save Change</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dialog rem-d-alert">
+        <div>
+            <h3 class="text-danger">Remove Degree</h3>
+            <form>
+                <div class="c-name">
+                    <label for="c-name">Select Course Name: </label>
+                    <select class="form-control" name="courseName" id="c-name">
+                        <option value="null" hidden>Course Name</option>
+                    </select>
+                    <p></p>
+                </div>
+                <div class="d-type">
+                    <label for="d-type">Select Degree Column: </label>
+                    <select class="form-control" name="degreeType" id="d-type">
+                        <option value="null" hidden>Degree Column</option>
+                    </select>
+                    <p></p>
+                </div>
+            </form>
+            <div class="model-footer">
+                <div class="btn btn-danger close-model">Close</div>
+                <div class="btn btn-primary save">Save Change</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="container">
+        <div id="table">
+            <table class="table">
+                <thead>
+                    
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                    <th style="color: white;" colspan="8">Total term's Degree</th>
+                    <td></td>
+                </tfoot>
+            </table>
+        </div>
+        <div class="btns">
+            <div>
+                <div class="btn btn-primary add-col">Add Column</div>
+                <div class="btn btn-danger rem-col">Remove Column</div>
+            </div>
+            <div>
+                <div class="btn btn-primary add-crs">Add Course</div>
+                <div class="btn btn-danger rem-crs">Remove Course</div>
+            </div>
+            <div>
+                <div class="btn btn-primary add-dgr">Add Degree</div>
+                <div class="btn btn-danger rem-dgr">Remove Degree</div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p><span style="font-size: 20px;margin-top: 10px;">&copy;</span> <span style="color: white;">CopyRight is preserved by</span> AISC</p>
+    </footer>
+
+
+    <script src="../Bootstrap-files/js/jquery-3.7.1.js"></script>
+    <script src="../Bootstrap-files/js/popper.min.js"></script>
+    <script src="../Bootstrap-files/js/bootstrap.js"></script>
+    <script src="../JS/AISC-Degree.js"></script>
+</body>
+</html>

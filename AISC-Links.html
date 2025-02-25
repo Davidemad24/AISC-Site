@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AICS-Site/Bootstrap-files/css/bootstrap.css">
+    <link rel="stylesheet" href="AICS-Site/CSS/AISC-Links.css">
+    <title>AISC Links</title>
+    <link rel="icon" type="image/jpg" href="AICS-Site/Pictures/AISC-logo.jpg">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="ASIC-Links.html">
+                <img src="AICS-Site/Pictures/AISC-logo.jpg" width="40" height="40"> 
+                <span>AISC</span>
+            </a>
+            <a href="#pages" class="navbar-toggler" data-toggle="collapse">
+                <span style="color: red;" class="navbar-toggler-icon"></span>
+            </a>
+            <div class="collapse navbar-collapse" id="pages">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="AICS-Site/HTML/AISC-Degree.html">Degree</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AICS-Site/HTML/AISC-Time_Table.html">Schudle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AICS-Site/HTML/AISC-Missions.html">Missions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AICS-Site/HTML/AISC-Lessons.html">Lessons</a>
+                    </li>
+                </ul>
+                <form role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dialog">
+        <div class="myAlert">
+            <h3>Add Site</h3>
+            <form>
+                <div class="mb-3 name">
+                    <label for="name">Site Name: </label>
+                    <input class="form-control" type="text" name="name" id="name" placeholder="Ex: Myhu">
+                    <p style="display: none;color: red;width: 600px;"></p>
+                </div>
+                <div class="mb-3 link">
+                    <label for="link">Site Link: </label>
+                    <input class="form-control" type="text" name="link" id="link" placeholder="https://*********">
+                    <p style="display: none;color: red;"></p>
+                </div>
+                <div class="mb-3 image">
+                    <label for="image">Site logo Link: </label>
+                    <input class="form-control" type="text" name="siteImage" id="image" placeholder="https://*********">
+                    <p style="display: none;color: red;"></p>
+                </div>
+            </form>
+            <div class="model-footer">
+                <button type="button" class="btn btn-danger close-model">Close</button>
+                <button type="submit" class="btn btn-primary save">Save Site</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dialog remove-site">
+        <div class="alert-Remove">
+            <h3>Add Site</h3>
+            <form>
+                <h5>Select sites: </h5>
+                <div class="form-control" style="background-color: rgba(0, 0, 0, 0.04);border: 2px solid silver;">
+
+                </div>
+                <p style="display: none;color: red;"></p>
+            </form>
+            <div class="model-footer">
+                <button type="button" class="btn btn-danger close-remove-model">Close</button>
+                <button type="submit" class="btn btn-primary save">Save Site</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="container">
+        <div class="links row">
+            
+        </div>
+
+
+        <div class="btns">
+            <div class="btn btn-primary add">Add Your Link</div>
+            <div class="btn btn-danger remove">Remove Link</div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p><span style="font-size: 20px;margin-top: 10px;">&copy;</span> <span style="color: white;">CopyRight is preserved by</span> AISC</p>
+    </footer>
+
+
+    <script src="AICS-Site/Bootstrap-files/js/jquery-3.7.1.js"></script>
+    <script src="AICS-Site/Bootstrap-files/js/popper.min.js"></script>
+    <script src="AICS-Site/Bootstrap-files/js/bootstrap.js"></script>
+    <script src="AICS-Site/JS/AISC-Links.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap-files/css/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/AISC-Missions.css">
+    <title>Missions</title>
+    <link rel="icon" type="image/jpg" href="../Pictures/AISC-logo.jpg">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a href="../../AISC-Links.html" class="navbar-brand">
+                <img src="../Pictures/AISC-logo.jpg" width="40" height="40" alt="">
+                <span>AISC</span>
+            </a>
+            <a href="#pages" class="navbar-toggler" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+            <div id="pages" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../AISC-Links.html">Links</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/AISC-Time_Table.html">Schudle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/AISC-Degree.html">Degree</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/AISC-Lessons.html">Lessons</a>
+                    </li>
+                </ul>
+                <div class="btns">
+                    <div class="btn btn-success f-mission">Finished missions</div>
+                    <div style="display: none;" class="btn btn-danger b-mission">Back to Missions</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="container">
+        <div class="dialog">
+            <div class="myAlert" style="background-color: white;width: 40%;
+            height: 55%;margin: 12% 30%;padding: 25px;border-radius: 5px;">
+                <h3>Add Mission</h3>
+                <form>
+                    <div class="mb-3 name">
+                        <label for="name">Mission: </label>
+                        <input id="name" class="form-control" type="text" name="name" id="name">
+                        <p style="display: none;color: red;"></p>
+                    </div>
+                    <div class="mb-3 priority">
+                        <label for="priority">Priority: </label>
+                        <input id="priority" class="form-control" type="number" name="priority" id="priority">
+                        <p style="display: none;color: red;"></p>
+                    </div>
+                    <div class="mb-3 mission-type">
+                        <label style="width: 100%;">Mission type: </label>
+                        <div class="body">
+                            <div>
+                                <input type="radio" value="study" name="m-type">
+                                <label for="">Study</label>
+                            </div>
+                            <div>
+                                <input type="radio" value="course" name="m-type">
+                                <label for="">Course</label>
+                            </div>
+                            <div>
+                                <input type="radio" value="section" name="m-type">
+                                <label for="">Section</label>
+                            </div>
+                            <div>
+                                <input type="radio" value="lecture" name="m-type">
+                                <label for="">Lecture</label>
+                            </div>
+                            <p style="display: none;color: red;"></p>
+                        </div>                            
+                    </div>
+                </form>
+                <div class="model-footer">
+                    <button type="button" class="btn btn-danger close-model">Close</button>
+                    <button type="submit" class="btn btn-primary save">Save Mission</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="head">
+            <form>
+                <input class="form-control" type="search" placeholder="Do you want to search about particular mission?">
+                <div class="btn btn-primary">Add Mission</div>
+            </form>
+        </div>
+
+
+        <p class="text-success" align="center" style="margin-bottom: 50px;">✅"Set your aim, and focus on it"</p>
+
+
+        <div class="missions">
+            <div class="study">
+                <div class="study-head"><h1>Study tasks</h1></div>
+                <div class="tasks">
+                    <p style="display: none;text-align: center;" class="text-success"></p>
+                </div>
+            </div>
+            <hr>
+            <div class="course">
+                <div class="course-head"><h1>Course tasks</h1></div>
+                <div class="tasks">
+                    <p style="display: none;text-align: center;" class="text-success"></p>
+                </div>
+            </div>
+            <hr>
+            <div class="section">
+                <div class="section-head"><h1>Section tasks</h1></div>
+                <div class="tasks">
+                    <p style="display: none;text-align: center;" class="text-success"></p>
+                </div>
+            </div>
+            <hr>
+            <div class="lecture">
+                <div class="lecture-head"><h1>Lecture tasks</h1></div>
+                <div class="tasks">
+                    <p style="display: none;text-align: center;" class="text-success"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p><span style="font-size: 20px;margin-top: 10px;">&copy;</span> <span style="color: white;">CopyRight is preserved by</span> AISC</p>
+    </footer>
+
+
+    <script src="../Bootstrap-files/js/jquery-3.7.1.js"></script>
+    <script src="../Bootstrap-files/js/popper.min.js"></script>
+    <script src="../Bootstrap-files/js/bootstrap.js"></script>
+    <script src="../JS/AISC-Missions.js"></script>
+</body>
+</html>

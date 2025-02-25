@@ -1,0 +1,141 @@
+.navbar{
+    background-color: rgb(15, 15, 93);
+}
+.navbar{
+    border-bottom: 4px solid rgb(48, 102, 238);
+}
+/* -------------------------------------------------------------------- nav -------------------------------------------------------- */
+#container{
+    height: 86vh;
+    background-color: rgb(14, 14, 69);
+    padding: 50px 0;
+}
+#table{
+    width: 95%;
+    margin-left: 2.5%;
+}
+table{
+    border-spacing: 0;
+}
+thead{
+    background-color: rgb(48, 102, 238);
+}
+th{
+    text-align: center;
+}
+td{
+    color: white;
+    text-align: center;
+}
+.btns{
+    text-align: center;
+}
+.btns .btn{
+    width: 200px;
+    margin-right: 5px;
+}
+#container p,.dialog p{
+    display: none;
+    color: red;
+}
+.dialog{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+} 
+.dialog > div{
+    width: 30%;
+    height: fit-content;
+    margin: 0 35%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.dialog > div h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.dialog > div form{
+    width: 95%;
+    margin: 0 2.5% 20px 2.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dialog > div .model-footer{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+/* -------------------------------------------------------------------- Container -------------------------------------------------- */ 
+footer{
+    background-color: rgb(48, 102, 238);
+    height: 50px;
+    padding: 10px;
+}
+footer p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+@media (min-width: 1200px){
+    .navbar{
+        height: 60px;
+    }
+    .navbar-brand{
+        width: 15%;
+    }
+    .navbar-brand img{
+        margin: 7px;
+    }
+    .navbar-brand span{
+        font-size: 30px;
+        position: relative;
+        top: 5px;
+    }
+    .navbar-nav{
+        width: 70%;
+        padding-left: 30%;
+    }
+    .navbar-nav a{
+        font-size: 18px;
+    } 
+}
+@media (min-width: 400px) and (max-width: 800px){
+    .navbar-nav li{
+        text-align: center;
+        font-size: 24px;
+    }
+    #table{
+        overflow: scroll;
+    }
+    #table::-webkit-scrollbar{
+        display: none;
+    }
+    .btns .btn{
+        width: 180px;
+    }
+}
+@media (min-width: 360px) and (max-width: 400px){
+    .navbar-nav li{
+        text-align: center;
+        font-size: 20px;
+    }
+    #table{
+        overflow: scroll;
+    }
+    #table::-webkit-scrollbar{
+        display: none;
+    }
+    .btns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
