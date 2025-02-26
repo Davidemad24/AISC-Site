@@ -50,8 +50,9 @@ search_input.addEventListener("input", function (){
             }
         });
     } else {
-        site_name.forEach((ele) => {
-            ele.style.display = "block";
+        site_name.forEach((ele,index) => {
+            site_link[index].style.display = "block";
+            site_link[index].classList.add("active");
         });
     }
     let count_link = document.querySelectorAll(".links .active").length;
